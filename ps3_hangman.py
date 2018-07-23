@@ -1,11 +1,7 @@
 # Hangman game
 #
 
-# -----------------------------------
-# Helper code
-# You don't need to understand this helper code,
-# but you will have to know how to use the functions
-# (so be sure to read the docstrings!)
+
 
 import random
 import string
@@ -118,7 +114,6 @@ def hangman(secretWord):
       partially guessed word so far, as well as letters that the 
       user has not yet guessed.
 
-    Follows the other limitations detailed in the problem write-up.
     
     '''
     lettersGuessed=[]
@@ -153,10 +148,6 @@ def hangman(secretWord):
         
                                       
     
-# When you've completed your hangman function, uncomment these two lines
-# and run this file to test! (hint: you might want to pick your own
-# secretWord while you're testing)
-
 wordlist = loadWords()
 print('Welcome to the game, Hangman!')
 secretWord = chooseWord(wordlist).lower()
